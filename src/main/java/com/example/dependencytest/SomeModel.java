@@ -2,14 +2,24 @@ package com.example.dependencytest;
 
 import com.google.common.base.Objects;
 
+/**
+ * This is some model.
+ */
 public class SomeModel {
 
     private int someField;
 
+    /**
+     * Constructs some model.
+     * @param someField field to construct model with
+     */
     public SomeModel(int someField) {
         this.someField = someField;
     }
 
+    /**
+     * @return some field
+     */
     public int getSomeField() {
         return someField;
     }
