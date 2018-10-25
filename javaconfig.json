@@ -1,0 +1,36 @@
+{
+  "projects": {
+    "/": {
+      // Metadata about the artifact if this project can be depended on by other projects
+      "artifactId": "dependency-test",
+      "groupId": "com.example",
+      "version": "0.0.1-SNAPSHOT",
+
+      // The source directories of this project
+      "sourceDirectories": ["src/main/java"],
+
+      // The test source directories of this project
+      "testSourceDirectories": ["src/test/java"],
+
+      // The Maven repositories from which to fetch dependencies
+      "repositories": [
+        {
+          "id": "central",
+          "url": "https://repo.maven.apache.org/maven2"
+        }
+      ],
+
+      // Dependencies specified by their artifact metadata
+      "dependencies": [
+        {
+          "groupId": "com.google.guava",
+          "artifactId": "guava",
+          "version": "24.1.1-jre"
+        }
+      ],
+
+      // Additional options to pass to javac during compilation
+      "compilerOptions": []
+    }
+  }
+}
